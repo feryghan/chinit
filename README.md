@@ -4,7 +4,7 @@
 * 支持tor网络，且可通过自定义网络配置文件启动v2ray和caddy来按需配置各种功能  
 * 支持存储自定义文件,目录及账号密码均为AUUID,客户端务必使用TLS连接  
   
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/mixool/kuhero)  
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/feryghan/chinit)  
   
 ### 服务端
 点击上面紫色`Deploy to Heroku`，会跳转到heroku app创建页面，填上app的名字、选择节点、按需修改部分参数和AUUID后点击下面deploy创建app即可开始部署  
@@ -25,11 +25,11 @@
 * 代理协议：vless 或 vmess
 * 地址：appname.herokuapp.com
 * 端口：443
-* 默认UUID：8f91b6a0-e8ee-11ea-adc1-0242ac120002
+* 默认UUID：b13181fb-09fa-460f-854f-23e5a45b3930
 * 加密：none
 * 传输协议：ws
 * 伪装类型：none
-* 路径：/8f91b6a0-e8ee-11ea-adc1-0242ac120002-vless // 默认vless使用/$uuid-vless，vmess使用/$uuid-vmess
+* 路径：/b13181fb-09fa-460f-854f-23e5a45b3930-vless // 默认vless使用/$uuid-vless，vmess使用/$uuid-vmess
 * 底层传输安全：tls
 ```
 </details>
@@ -46,11 +46,11 @@
     "remote_addr": "appname.herokuapp.com",
     "remote_port": 443,
     "password": [
-        "8f91b6a0-e8ee-11ea-adc1-0242ac120002"
+        "b13181fb-09fa-460f-854f-23e5a45b3930"
     ],
     "websocket": {
         "enabled": true,
-        "path": "/8f91b6a0-e8ee-11ea-adc1-0242ac120002-trojan",
+        "path": "/b13181fb-09fa-460f-854f-23e5a45b3930-trojan",
         "host": "appname.herokuapp.com"
     }
 }
@@ -67,7 +67,7 @@
 * 密码：password
 * 加密：chacha20-ietf-poly1305
 * 插件程序：v2ray-plugin_windows_amd64.exe  //需将插件https://github.com/shadowsocks/v2ray-plugin/releases下载解压后放至shadowsocks同目录
-* 插件选项: tls;host=appname.herokuapp.com;path=/8f91b6a0-e8ee-11ea-adc1-0242ac120002-ss
+* 插件选项: tls;host=appname.herokuapp.com;path=/b13181fb-09fa-460f-854f-23e5a45b3930-ss
 ```
 </details>
   
